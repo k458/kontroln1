@@ -18,6 +18,7 @@ string[] GetFilteredStringArray(string[] strings)
     int iRet = 0;
     for (int i = 0; i < strings.Length; i++)
     {
+        if (strings[i] == null) continue;
         if (strings[i].Length >= 4) continue;
         ret[iRet] = strings[i];
         iRet++;
@@ -33,16 +34,43 @@ string[] GetFilteredStringArray(string[] strings)
     }
     return ret;
 }
-
+string[] RemoveNullsFromStringArray(string[] strings)
+{
+    string[] ret = new string[strings.Length];
+    int iRet = 0;
+    for (int i = 0; i < strings.Length; i++)
+    {
+        if (strings[i] == null) continue;
+        ret[iRet] = strings[i];
+        iRet++;
+    }
+    if (iRet < strings.Length)
+    {
+        string[] ret1 = new string[iRet];
+        for (int i = 0; i < iRet; i++)
+        {
+            ret1[i] = ret[i];
+        }
+        ret = ret1;
+    }
+    return ret;
+}
 while (true)
 {
     if (wordsAdded >= 5) break;
     Console.Write($"Input words({1 + wordsAdded} of 5): ");
     string input = Console.ReadLine();
-    if (input == "start" && wordsAdded > 0) break;
-    strings[wordsAdded] = input;
-    wordsAdded++;
+    if (input == "start")
+    {
+        if (wordsAdded > 0) break;
+    }
+    else 
+    {
+        strings[wordsAdded] = input;
+        wordsAdded++;
+    }
 }
+strings = RemoveNullsFromStringArray(strings);
 PrintStringArray(strings);
 Console.Write(" → ");
 PrintStringArray(GetFilteredStringArray(strings));
