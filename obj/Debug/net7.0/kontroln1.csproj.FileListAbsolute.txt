@@ -1,0 +1,14 @@
+D:\desktop\kontroln1\bin\Debug\net7.0\kontroln1.exe
+D:\desktop\kontroln1\bin\Debug\net7.0\kontroln1.deps.json
+D:\desktop\kontroln1\bin\Debug\net7.0\kontroln1.runtimeconfig.json
+D:\desktop\kontroln1\bin\Debug\net7.0\kontroln1.dll
+D:\desktop\kontroln1\bin\Debug\net7.0\kontroln1.pdb
+D:\desktop\kontroln1\obj\Debug\net7.0\kontroln1.GeneratedMSBuildEditorConfig.editorconfig
+D:\desktop\kontroln1\obj\Debug\net7.0\kontroln1.AssemblyInfoInputs.cache
+D:\desktop\kontroln1\obj\Debug\net7.0\kontroln1.AssemblyInfo.cs
+D:\desktop\kontroln1\obj\Debug\net7.0\kontroln1.csproj.CoreCompileInputs.cache
+D:\desktop\kontroln1\obj\Debug\net7.0\kontroln1.dll
+D:\desktop\kontroln1\obj\Debug\net7.0\refint\kontroln1.dll
+D:\desktop\kontroln1\obj\Debug\net7.0\kontroln1.pdb
+D:\desktop\kontroln1\obj\Debug\net7.0\kontroln1.genruntimeconfig.cache
+D:\desktop\kontroln1\obj\Debug\net7.0\ref\kontroln1.dll
